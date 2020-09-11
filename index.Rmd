@@ -1,0 +1,80 @@
+---
+title: "Presentation Shiny Application"
+author: "Sandra Rairán"
+date: "9/11/2020"
+output: ioslides_presentation
+---
+
+## About Shiny Application
+
+1. Write a shiny application with associated supporting documentation. The documentation should be thought of as whatever a user will need to get started using your application.
+2. Deploy the application on Rstudio's shiny server
+3. Share the application link by pasting it into the provided text box
+4. Share your server.R and ui.R code on github
+
+- code reactive
+`{ datasetInput <- reactive({
+switch(input$dataset,
+"mtcars" = mtcars,
+"pressure" = pressure,
+"cars" = cars)
+})}`
+
+## How to use the application
+
+The application is running on:
+www.rstudio.com
+
+1. Selector for choosing dataset and Numeric entry for number of observation to view
+2. Select tabPanel View
+3. Select tabPanel View and return the requested dataset, declaring datasetInput as a reactive expression
+4. Select tabPanel Str, information about dataset
+
+
+
+## str Dataset Cars
+#### Speed and Stopping Distances of Cars
+- Description
+The data give the speed of cars and the distances taken to stop. Note that the data were recorded in the 1920s.
+
+- Format
+A data frame with 50 observations on 2 variables.
+
+[,1]	speed	numeric	Speed (mph)
+[,2]	dist	numeric	Stopping distance (ft)
+Source
+Ezekiel, M. (1930) Methods of Correlation Analysis. Wiley.
+
+- References
+McNeil, D. R. (1977) Interactive Data Analysis. Wiley.
+
+
+
+
+```{r echo=FALSE,message=FALSE}
+str(cars)
+```
+
+
+
+## str Dataset pressure
+#### Vapor Pressure of Mercury as a Function of Temperature
+- Description
+Data on the relation between temperature in degrees Celsius and vapor pressure of mercury in millimeters (of mercury).
+
+
+- Format
+A data frame with 19 observations on 2 variables.
+
+[, 1]	temperature	numeric	temperature (deg C)
+[, 2]	pressure	numeric	pressure (mm)
+Source
+Weast, R. C., ed. (1973) Handbook of Chemistry and Physics. CRC Press.
+
+_ References
+McNeil, D. R. (1977) Interactive Data Analysis. New York: Wiley.
+
+```{r echo=FALSE,message=FALSE}
+str(pressure)
+```
+
