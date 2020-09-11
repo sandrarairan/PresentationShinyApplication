@@ -30,7 +30,8 @@ The application is running on:
 3. Select tabPanel View and return the requested dataset, declaring datasetInput as a reactive expression
 4. Select tabPanel Str, information about dataset
 
-
+ - Code GitHub: 
+ https://github.com/sandrarairan/Course-Project-Shiny-Application
 
 ## str Dataset Cars
 #### Speed and Stopping Distances of Cars
