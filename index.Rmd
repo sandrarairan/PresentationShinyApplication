@@ -23,7 +23,7 @@ switch(input$dataset,
 ## How to use the application
 
 The application is running on:
-www.rstudio.com
+ https://sandrarairan.shinyapps.io/proyecto3_appshiny/
 
 1. Selector for choosing dataset and Numeric entry for number of observation to view
 2. Select tabPanel View
